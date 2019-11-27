@@ -29,7 +29,8 @@ pipeline {
                 branch 'production'  
             }
             steps {
-                sh '/var/lib/jenkins/scripts/deploy.sh' 
+                sh '/var/lib/jenkins/scripts/deploy.sh'
+                sh '/var/lib/jenkins/scripts/deploy2.sh'
 
             }
         }
