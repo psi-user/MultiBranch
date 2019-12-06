@@ -21,10 +21,7 @@ pipeline {
         }
         stage('Deploy for production') {
             def branch = "${env.BRANCH_NAME}"
-            steps {
                 sh "/var/lib/jenkins/scripts/./deploy-test-web ${env.BRANCH_NAME}"
-
-            }
         }
     }
 }
